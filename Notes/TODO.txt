@@ -1,0 +1,19 @@
+https://github.com/DeividasBrazenas/tla-generator
+https://www.zurnalai.vu.lt/open-series/article/view/32213/31028
+
+TLA+ specifikacijų išskyrimas  iš Elixir programos
+
+Apie ka paskaitineti
+    Issabela https://isabelle.in.tum.de/
+    Elixir supervision https://elixir-lang.org/getting-started/mix-otp/supervisor-and-application.html ; https://hexdocs.pm/elixir/1.12/Supervisor.html
+
+Kitas susitikimas: Rugpjucio 23 18:30
+Ka padaryti iki kito susitikimo:
+    1. Suprasti kas iviso yra tas supervisor procesas
+    2. Suprasti kaip Deividas mappino dalykus
+    3. Pagalvoti kaip mappinti supervisor i PlusCal
+    4. Parasyti MD1
+        a. Tiksla
+        b. Uzdavinius
+        c. Laukiami rezultatai
+        d. Hipoteze
