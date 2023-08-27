@@ -1,0 +1,17 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\selectlanguage *{lithuanian}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Įvadas}{2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Temos aktualumas bei naujumas}{4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Darbo tikslas}{4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Uždaviniai}{4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Laukiami rezultatai}{4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Hipotezė}{4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Literatūra}{5}%
