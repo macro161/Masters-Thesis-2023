@@ -1,0 +1,32 @@
+# Output files
+*.bcf
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+
+# Temporary files
+*_latexmk
+*.fls
+*.synctex.gz
+*.fdb_latexmk
+*.run.xml
+
+# Directories
+_build/
+
+# Other files
+*.pdf
+*.bak
+*.swp
+*.swo
+*.backup
+*.nav
+*.snm
+*.vrb
+*.synctex.gz(busy)
+*.synctex(busy)
