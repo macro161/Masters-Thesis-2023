@@ -48,16 +48,16 @@
 
 		\begin{enumerate}
 			\item{Pasiekiamumas (angl. {\it Availability}) -- vartotojas gali pasiekti sistemą bet kuriuo metu \cite{180327}.}
-			\item{Patvarumas (angl. {\it Durability}) -- išskirstytos sistemos užtikrina duomenų išlaikymą ir pastovų veikimą net jeigu ir vienas iš paskirstytos sistemos mazgų nustotų veikti dėl sistemos sutrikimų, sukeltų programos klaidų arba gamtos katastrofų, tokių kaip: gaisrai, potvyniai ir panašios nelaimės. Ši savybė taip pat užtikrina sistemos gebėjimą atsistatyti ir neprarasti duomenų po minėtų įvykių \cite{5470366}.}
-			\item{Plečiamumas (angl. {\it Scalability}) -- didėjant vartotojų skaičiui bei programų sistemos kompleksiškumui išskirstytos sistemos užtikriną vertikalų (padidinti mazgo techninės įrangos galingumą) bei horizontalų (padidinti mazgų skaičių sistemoje) plečiamumą \cite{862209}.}
-			\item{Našumas (angl. {\it Efficiency}) -- sistemos vartotojų skaičius dažniausiai būna nepastovus, jis kinta dienos metu arba atitinkamais metų periodais. Išskirstytos sistemos padeda užtikrinti našų įrangos resursų naudojimą sumažinant įrangos galingumą (kai vartotojų skaičius yra nedidelis) bei padidinant galingumą (kai sistemos apkrova padidėja).}
+			\item{Patvarumas (angl. {\it Durability}) -- išskirstytos sistemos užtikrina duomenų išlaikymą ir pastovų veikimą net it tuo atveju, jeigu vienas iš paskirstytos sistemos mazgų nustotų veikti dėl sistemos sutrikimų, sukeltų programos klaidų arba gamtos katastrofų, tokių kaip: gaisrai, potvyniai ir panašios nelaimės. Ši savybė taip pat užtikrina sistemos gebėjimą atsistatyti ir neprarasti duomenų po minėtų įvykių \cite{5470366}.}
+			\item{Plečiamumas (angl. {\it Scalability}) -- didėjant vartotojų skaičiui bei programų sistemos kompleksiškumui, išskirstytos sistemos užtikriną vertikalų (padidinti mazgo techninės įrangos galingumą) bei horizontalų (padidinti mazgų skaičių sistemoje) plečiamumą \cite{862209}.}
+			\item{Našumas (angl. {\it Efficiency}) -- sistemos vartotojų skaičius dažniausiai būna nepastovus, jis kinta dienos metu arba atitinkamais metų periodais. Išskirstytos sistemos padeda užtikrinti našų įrangos resursų naudojimą sumažinant įrangos galingumą (kai vartotojų skaičius yra nedidelis) arba jį padidinant (kai sistemos apkrova padidėja).}
 		\end{enumerate}
 
 		Norint užtikrinti kuriamos sistemos kokybę dažnai yra rašomi testai. 
 		Testai padeda atskleisti programos klaidas arba pasakyti ar naujas kodas nepaveikė seniau parašyto funkcionalumo \cite{819971}.
-		Tačiau net ir laikantis gerųjų testavimo praktikų nepavyksta išvengti programos klaidų.
-		Net ir paskyrus daugiau resursų testavimui sudėtinguose sistemose, pilnas sistemos testavimas yra neįmanomas \cite{sullivan2004software}.
-		Norint rasti subtilesnius sutrikimus pačioje sistemos architektūroje, tokius kaip dalinis mazgų neveikimas, lygiagrečių algoritmų klaidos naudojant keletą procesų, gedimų atsparumo ir atsistatymo po gedimo algoritmų klaidos bei kitiems kraštutiniams veikimo scenarijams \cite{newcombe2014use} rasti ir išspręsti turime ieškoti kitų būdų. 
+		Tačiau net ir laikantis gerųjų testavimo praktikų, nepavyksta išvengti programos klaidų.
+		Net ir paskyrus daugiau resursų testavimui sudėtingose sistemose, pilnas sistemos testavimas yra neįmanomas \cite{sullivan2004software}.
+		Norint rasti subtilesnius sutrikimus pačioje sistemos architektūroje, tokius kaip: dalinis mazgų neveikimas, lygiagrečių algoritmų klaidos naudojant keletą procesų, gedimų atsparumo ir atsistatymo po gedimų algoritmų klaidos bei rasti ir išspręsti kitus kraštutinius veikimo scenarijus \cite{newcombe2014use}, turime ieškoti kitų būdų. 
 		Vienas iš jų formalios specifikacijos.
 
         Formalios specifikacijos(angl. {\it Formal specification}) yra matematinės technikos skirtos apibūdinti sistemų elgseną naudojant griežtas ir veiksmingas priemones \cite{holzmann1995improvement}.
@@ -71,7 +71,7 @@
 		
 
 		TLA\textsuperscript{+} yra formalios specifikacijos kalba, kurią sukūrė Leslie Lamport \cite{lamport2002specifying}.
-		Leslie Lamport 1980 metais sukūrė laiko veiksmų logiką (angl. {\it Temporal Logic of Actions}) \cite{10.1145/177492.177726} pasinaudodamas Amir Pnueli 1977 metais sukurta laiko logika (angl. {\it Temporal Logic}) \cite{4567924}.
+		Leslie Lamport 1980 metais sukūrė laiko veiksmų logiką (angl. {\it Temporal Logic of Actions}) \cite{10.1145/177492.177726}. Jis tai atliko pasinaudodamas Amir Pnueli 1977 metais sukurta laiko logika (angl. {\it Temporal Logic}) \cite{4567924}.
 		1999 metais Leslie Lamport naudodamasis laiko veiksmų logika sukūrė formalaus specifikavimo kalbą TLA\textsuperscript{+} \cite{lamport2002specifying}.
 		
 
@@ -79,7 +79,7 @@
 		Naudojant TLA\textsuperscript{+} galima specifikuoti šias išskirstytų sistemų savybes \cite{lamport2019safety}:
   
 		\begin{enumerate}
-			\item{Gyvumas -- geri dalykai įvyksta programos vykdymo metu. Sistema galiausiai atliks jai paskirtą užduotį arba pateks į norimą būseną.}
+			\item{Gyvumas -- geri dalykai įvyksta programos vykdymo metu. Sistema galiausiai atliks jai paskirtą užduotį arba pasieks norimą būseną.}
 			\item{Saugumas -- blogi dalykai neatsitiks programos vykdymo metu. Sistema nesustos veikti dėl netikėtai iškilusios klaidos.}
 		\end{enumerate}
   
@@ -87,37 +87,37 @@
 
 	Šias savybes mes galime patikrinti naudodamiesi TLC Model Checker (modelio tikrintoju).
 		TLC yra išreikštinės būsenos (explicit-state) modelio tikrintojas, kurio paskirtis yra palaipsniui pasiekti visas galimas sistemos būsenas pagal nurodytą formalią specifikaciją \cite{yu1999model}.
-		Tačiau kartais pagal sukurtą formalią specifikaciją susidaro labai daug būsenų, kurias sistema gali pasiekti, todėl tampa nepraktiška naudoti TLC.
+		Tačiau kartais pagal sukurtą formalią specifikaciją susidaro labai daug būsenų, kurias sistema gali pasiekti, todėl naudoti TLC tampa nepraktiška.
 		Tokiu atveju galime naudotis TLA\textsuperscript{+} specifikacijos įrodymo sistema TLAPS \cite{cousineau2012tla+}.
-		TLAPS yra įrodymų sistema skirta patikrinti TLA\textsuperscript{+} įrodymus.
+		TLAPS yra įrodymų sistema, skirta patikrinti TLA\textsuperscript{+} įrodymus.
 		Šios sistemos paskirtis yra patikrinti pateiktus teoremų įrodymus.
-		Įrodžius teoremą laikoma, kad TLA\textsuperscript{+} specifikacija yra korektiška.
+		Įrodžius teoremą yra laikoma, kad TLA\textsuperscript{+} specifikacija yra korektiška.
 
 
-		Yra ir kitų formalaus specifikavimo kalbų kurias galėtume naudoti šiame darbe.
-		Viena iš jų Z formalaus specifikavimo kalba \cite{O’Regan2017}, kuri sėkmingai buvo naudota specifikuoti UNIX failų sistemai \cite{bowen1996formal}, bei Oksfordo universiteto paskirstytų skaičiavimų projekte \cite{bowen1996formal}.
+		Yra ir kitų formalaus specifikavimo kalbų, kurias galėtume naudoti šiame darbe.
+		Viena iš jų -- Z formalaus specifikavimo kalba \cite{O’Regan2017}, kuri sėkmingai buvo panaudota specifikuoti UNIX failų sistemą \cite{bowen1996formal} bei pasitelkta Oksfordo universiteto paskirstytų skaičiavimų projekte \cite{bowen1996formal}.
 		Dar viena formalaus specifikavimo kalba yra VDA \cite{bjorner1978vienna}, kuria buvo specifikuoti bendros atminties sinchronizavimo algoritmai \cite{Slaats1998}.
 		Tačiau šiam darbui buvo pasirinkta TLA\textsuperscript{+} kalba dėl jos pritaikymo išskirstytoms sistemoms naudojant būsenų mašiną \cite{lamport2002specifying}, esamų sėkmingo pritaikymo pavyzdžių specifikuojant išskirstytas sistemas \cite{newcombe2014use,kfkTla,rafttla,jiryu2020extreme} bei gausaus TLA\textsuperscript{+} įrankių pasirinkimo.
 
-        Kuriant sistemos specifikaciją iškyla dvi pagrindinės problemos
+        Kuriant sistemos specifikaciją iškyla dvi pagrindinės problemos:
         
         \begin{enumerate}
-            \item{Sukurti sistemos formalią specifikaciją reikalauja papildomo laiko ir žinių.}
+            \item{Norint sukurti sistemos formalią specifikaciją reikia papildomo laiko ir žinių.}
             \item{Formali specifikacija gali neatitikti sistemos įgyvendinimo.}
         \end{enumerate}
 
         Šiuo metu tik nedidelė dalis programuotojų ir įmonių naudoja formalias specifikacijas savo
-        programų kūrimo procese todėl norint įvesti šia praktiką į projektą reikalingas žmonių apmokymas
-        kuris kainuoja laiką ir pinigus.
+        programų kūrimo procese, todėl norint taikyti šią praktiką projekte, reikia apmokyti darbuotojus,
+        o tai kainuoja bei užtrunka nemažai laiko.
 
-        Tačiau net ir suprantant kaip kurti formalias specifikacijas yra galimybė padaryti aplaidumo klaidų dėl kurių formali specifikacija nepilnai atitiktų tikro sistemos įgyvendinimo.
+        Tačiau net ir suprantant kaip kurti formalias specifikacijas, yra tikimybė padaryti aplaidumo klaidų, dėl kurių formali specifikacija nepilnai atitiktų tikrą sistemos įgyvendinimą.
     
-        Kad įgyvendintas programinis kodas atitiktų formalią specifikaciją mes galime testuoti kodą vieneto testais ir atlikinėti kodo peržiūras. Tačiau tai negarantuoja, kad klaidos, dėl specifikacijos
-        neatitikimo, nepasieks vykdomosios aplinkos sukeldamos problemų sistemos vartotojams.
+        Kad įgyvendintas programinis kodas atitiktų formalią specifikaciją, mes galime testuoti kodą vieneto testais ir atlikinėti kodo peržiūras. Tačiau tai negarantuoja, kad klaidos, dėl specifikacijos
+        neatitikimo, nepasieks vykdomosios aplinkos, sukeldamos problemų sistemos vartotojams.
         Skirtumą tarp formalios specifikacijos ir įgyvendinto kodo galime sumažinti generuojant kodą iš
         formalios specifikacijos arba generuojant specifikaciją iš programinio kodo. 
 
-        Išskirstytas sistemas galima kurti naudojant bet kokią programavimo kalbą(ActiveMQ \cite{snyder2011activemq} naudoja Java programavimo kalbą, Apache Spark \cite{spark2018apache} naudoja Scala programavimo kalbą).
+        Išskirstytas sistemas galima kurti naudojant bet kokią programavimo kalbą (ActiveMQ \cite{snyder2011activemq} naudoja Java programavimo kalbą, Apache Spark \cite{spark2018apache} naudoja Scala programavimo kalbą).
 		Viena populiaresnių funkcinių programavimo kalbų naudojamų išskirstytų sistemų kūrime yra Elixir.
 		Elixir yra dinaminė, funkcinė programavimo kalba skirta kurti išskirstytoms sistemoms\cite{juric2019elixir}.
 		Elixir kalba veikia naudodama Erlang BEAM virtualią mašiną, kurios pagalba galima kurti mažo delsimo, išskirstytas, trikdžiams atsparias sistemas.
@@ -127,28 +127,28 @@
         Elixir sistemų, kad galėtume generuoti TLA\textsuperscript{+} formalias specifikacijas, turime sukurti generavimo metodus ir kitiems kalbos funkcionalumams.
         Vienas iš dažnai naudojamų Elixir kalbos funkcionalumų yra prižiūrintieji procesai(angl. {\it Supervizor process}).
         
-        Elixir kalboje procesas yra pagrindinis sistemos elementai.
+        Elixir kalboje procesas yra pagrindinis sistemos elementas.
         Procesai yra lengvi, izoliuoti ir gali veikti lygiagrečiai.
-        Tačiau norint užtikrinti procesų atsparumą gedimams (angl. {\it Fault tolerance}) mums reikalingas mechanizmas prižiūrėti šiems procesams.
+        Tačiau norint užtikrinti procesų atsparumą gedimams (angl. {\it Fault tolerance}), mums reikalingas mechanizmas, kuriuo galėtume prižiūrėti procesus.
         Šį mechanizmą Elixir kalboje įgyvendina prižiūrintieji procesai.
-        Prižiūrintysis procesas turi tris pagrindines paskirtis
+        Prižiūrintysis procesas turi tris pagrindines paskirtis:
         \begin{enumerate}
             \item {Sukurti vaikinį procesą.}
-            \item {Paleisti vaikinį procesą iš naujo įvykus vykdymo sutrikimams arba pasiekus norimą sąlyga.}
+            \item {Paleisti vaikinį procesą iš naujo, jei įvyksta vykdymo sutrikimas arba yra pasiekiama norima sąlyga.}
             \item {Išjungti vaikinį procesą programos veikimo pabaigoje.}
         \end{enumerate}
 
         Prižiūrintieji procesai gali valdyti kitus prižiūrinčiuosius procesus taip sudarydami vadinamąjį
         prižiūrėjimo medį(angl. {\it Supervision tree}).
 
-        Šiame darbe bandysime sukurti metodą, kaip iš Elixir kodo naudojančio prižiūrėjimo procesus išskirti TLA\textsuperscript{+} formalią specifikaciją.
+        Šiame darbe bandysime sukurti metodą -- kaip iš Elixir kodo, naudojančio prižiūrėjimo procesus, išskirti TLA\textsuperscript{+} formalią specifikaciją.
 
 
 	\sectionnonum{Temos aktualumas bei naujumas}
 		Viena iš formalių specifikacijų ir TLA\textsuperscript{+} panaudojimo industrijoje sėkmės istorijų yra Amazon Web Service (AWS) komandos 2014 metais išleistas straipsnis \cite{newcombe2014use}.
-		Straipsnyje rašoma,  kad AWS komanda naudojo TLA\textsuperscript{+} sudarant formalias specifikacijas dešimtyje projektų. Tuo metu AWS turėjo 7 komandas, kurios naudojosi TLA\textsuperscript{+} kurdamos naujas programų sistemas.
-		AWS sistemos specifikavimo metu buvo surasta 10 iki šiol neatrastų sisteminių klaidų, kurių atradimas ir pasiūlyti ištaisymai atskleidė tolimesnes sistemos klaidas, kurios taip pat buvo ištaisytos.
-		Straipsnyje įvardinta ir kita, netiesioginė nauda gauta formaliai specifikuojant sistemas: pagerėjęs bendras sistemos suvokimas, padidėjęs produktyvumas ir inovacijos.
+		Straipsnyje rašoma, kad AWS komanda naudojo TLA\textsuperscript{+} sudarant formalias specifikacijas dešimtyje projektų. Tuo metu AWS turėjo 7 komandas, kurios naudojosi TLA\textsuperscript{+} kurdamos naujas programų sistemas.
+		AWS sistemos specifikavimo metu buvo surasta 10 iki šiol neatrastų sisteminių klaidų, kurių atradimas ir pasiūlyti jų ištaisymai atskleidė tolimesnes sistemos klaidas, kurios taip pat buvo ištaisytos.
+		Straipsnyje įvardinta ir kita, netiesioginė nauda gauta formaliai specifikuojant sistemas -- pagerėjęs bendras sistemos suvokimas, padidėjęs produktyvumas ir inovacijos.
 		
 		Dar viena sėkmės istorija yra 2018 metais Kafka Summit konferencijoje pristatyta Kafka TLA\textsuperscript{+} formali specifikacija, kurią sukūrė Jason Gustafson \cite{kfkTla}.
 		Pristatyme buvo parodyta kaip pritaikant TLA\textsuperscript{+} bei specifikuojant Kafka duomenų replikavimo algoritmą buvo surastos ir pataisytos 3 retai atsitinkančios programos klaidos.
@@ -156,18 +156,18 @@
 
         Šie pavyzdžiai parodo, kad TLA\textsuperscript{+} specifikacijų naudojimas programų kūrimo procese padeda surasti klaidas ir padidinti sistemos atsparumą trikdžiams.
 
-        Nors iš pateiktų pavyzdžių galima teigti, kad TLA\textsuperscript{+} specifikacijos suteikia naudos, tačiau sistemų kūrėjai vangiai naudoja jas programų kūrimo procese, dėl aukštos mokymosi
-        kartelės, bei sukurto kodo atitikimo su formalia specifikacija.
+        Nors iš pateiktų pavyzdžių galima teigti, kad TLA\textsuperscript{+} specifikacijos suteikia naudos, tačiau sistemų kūrėjai vangiai naudoja jas programų kūrimo procese dėl aukštos mokymosi
+        kartelės bei sukurto kodo atitikimo su formalia specifikacija.
 
         Matomas poreikis įrankiams ir metodams padedantiems palengvinti TLA\textsuperscript{+} specifikacijų kūrimo procesą bei užtikrinantiems geresnį specifikacijos atitikimą programiniam kodui. 
 
-        Elixir kalba dažnai naudojama išskirstytoms sistemos \cite{expop} kuriomis naudojasi daug vartotojų. 
+        Elixir kalba dažnai naudojama išskirstytoms sistemos \cite{expop}, kuriomis naudojasi daug vartotojų. 
         Tokioms sistemoms yra svarbu, kad jose būtų kuo mažiau klaidų ir sutrikimų.
         Trukdžiai tokiose sistemose gali paveikti daug vartotojų, sukelti saugumo spragas, paveikti sistemos kūrėjų reputaciją bei sukelti finansinių nuostolių.
 
         Šiame darbe sieksime sukurti taisyklių rinkinį, kurio pagalba Elixir sistemų formali specifikacija taptų lengvesnė bei labiau atitiktų įgyvendintą kodą.
-        Darbe praplėsime ankščiau pradėtą TLA\textsuperscript{+} specifikacijos išskyrimą iš nuoseklaus Elixir kodo pridėdami taisyklių rinkinį kuris išskirtų TLA\textsuperscript{+} iš Elixir prižiūrinčiųjų procesų kodo. 
-        Šios taisyklės praplėstų aibę išskirstytų sistemų, iš kurių kodo galėtume išskirti formalią specifikaciją taip įgalindami Elixir programuotojus lengviau specifikuoti sistemas.
+        Darbe praplėsime ankščiau pradėtą TLA\textsuperscript{+} specifikacijos išskyrimą iš nuoseklaus Elixir kodo pridėdami taisyklių rinkinį, kuris išskirtų TLA\textsuperscript{+} iš Elixir prižiūrinčiųjų procesų kodo. 
+        Šios taisyklės praplėstų aibę išskirstytų sistemų iš kurių kodo galėtume išskirti formalią specifikaciją, taip įgalindami Elixir programuotojus lengviau specifikuoti sistemas.
 
 	\sectionnonum{Darbo tikslas}
 		Sukurti metodą kuris išskiria TLA\textsuperscript{+} specifikaciją iš Elixir prižiūrinčiųjų procesų programinio kodo.
@@ -184,15 +184,15 @@
 	\sectionnonum{Laukiami rezultatai}
 		\begin{enumerate}
 			\item{Elixir prižiūrinčiųjų procesų kodo pavertimas į TLA\textsuperscript{+} specifikaciją.}
-			\item{Įrodymas apie Elixir kodo pavertimo į TLA\textsuperscript{+} specifikaciją adekvatumas.}
+			\item{Įrodytas Elixir kodo pavertimo į TLA\textsuperscript{+} specifikaciją adekvatumas.}
 			\item{Elixir kodo ir TLA\textsuperscript{+} specifikacijos sutapimo įvertinimas.}
 			\item{Papildytas TLA\textsuperscript{+} specifikacijos iš Elixir kodo generatorius.}
 		\end{enumerate}
 
 	\sectionnonum{Hipotezės}
 		\begin{itemize}
-			\item H0 (Nulinė hipotezė) -- neegzistuoja metodas paverčiantis Elixir prižiūrinčiųjų procesų kodą į TLA\textsuperscript{+} specifikaciją.
-			\item H1 (Alternatyvi hipotezė) -- egzistuoja metodas paverčiantis Elixir prižiūrinčiųjų procesų kodą į TLA\textsuperscript{+} specifikaciją.
+			\item H0 (nulinė hipotezė) -- metodas paverčiantis Elixir prižiūrinčiųjų procesų kodą į TLA\textsuperscript{+} specifikaciją neegzistuoja.
+			\item H1 (alternatyvi hipotezė) -- metodas paverčiantis Elixir prižiūrinčiųjų procesų kodą į TLA\textsuperscript{+} specifikaciją egzistuoja.
 		\end{itemize}
 		
 	\pagebreak
